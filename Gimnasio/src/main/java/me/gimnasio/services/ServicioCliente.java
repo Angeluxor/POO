@@ -71,7 +71,8 @@ public class ServicioCliente {
         for (Cliente clienteActual : clientes) {
             
             if(clienteActual.getId() == id){
-                clientes.remove(clientes.indexOf(clienteActual));
+                clientes.remove(clienteActual);
+                break;
             }
         }
     }

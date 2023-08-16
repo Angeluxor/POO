@@ -15,6 +15,7 @@ import me.gimnasio.services.ServicioCliente;
 public class Gimnasio {
 
     public static void main(String[] args) {
+        
         ArrayList<Cliente> clientes = new ArrayList<>();              
         clientes.add(ServicioCliente.registrarCliente());
         clientes.add(ServicioCliente.registrarCliente());        

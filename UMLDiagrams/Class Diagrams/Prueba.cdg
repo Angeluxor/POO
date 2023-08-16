@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Prueba">
+  <ClassDiagramComponents>
+    <Class name="HotelApp" package="" visibility="public" xPosition="12.0" yPosition="21.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Persona" package="" visibility="public" xPosition="286.0" yPosition="21.0">
+      <Fields>
+        <Field name="DNI" type="int" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="edad" type="int" visibility="private"/>
+        <Field name="pais" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="DNI"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="String" name="pais"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getDNI" returnType="int" visibility="public"/>
+        <Method name="setDNI" returnType="void" visibility="public">
+          <Argument type="int" name="DNI"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Colecciones6Tienda">
+  <ClassDiagramComponents>
+    <Class name="Colecciones6Tienda" package="me.colecciones6tienda" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Producto" package="me.colecciones6tienda.entities" visibility="public" xPosition="252.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="precio" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="double" name="precio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getPrecio" returnType="double" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="double" name="precio"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ProductoService" package="me.colecciones6tienda.services" visibility="public" xPosition="573.0" yPosition="30.0">
+      <Fields>
+        <Field name="key" type="Integer" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="crearProducto" returnType="Producto" visibility="public"/>
+        <Method name="agregarProducto" returnType="void" visibility="public">
+          <Argument type="HashMap&lt;Integer, Producto&gt;" name="mapaProductos"/>
+        </Method>
+        <Method name="leerProductoValor" returnType="Producto" visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="HashMap&lt;Integer, Producto&gt;" name="mapaProductos"/>
+        </Method>
+        <Method name="leerProductoClave" returnType="Integer" visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="HashMap&lt;Integer, Producto&gt;" name="mapaProductos"/>
+        </Method>
+        <Method name="modificarProducto" returnType="void" visibility="public">
+          <Argument type="HashMap&lt;Integer, Producto&gt;" name="mapaProductos"/>
+        </Method>
+        <Method name="eliminarProducto" returnType="void" visibility="public">
+          <Argument type="HashMap&lt;Integer, Producto&gt;" name="mapaProductos"/>
+        </Method>
+        <Method name="generadorProducto" returnType="void" visibility="public">
+          <Argument type="HashMap&lt;Integer, Producto&gt;" name="mapaProductos"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="me.colecciones6tienda.services.ProductoService" target="me.colecciones6tienda.entities.Producto" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
